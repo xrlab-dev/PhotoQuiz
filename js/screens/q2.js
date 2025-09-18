@@ -7,6 +7,8 @@ import {
     q2AImg, q2BImg, q2CImg, q2DImg
 } from "../core/dom.js";
 
+import { goToQuestion3 } from "./q3.js";
+
 export function goToQuestion2() {
     // Oculta Q1
     hide(q1Title, q1A, q1B, q1C, q1D);
@@ -42,8 +44,7 @@ function selectQ2(letter) {
 
     console.log("Q2 =", map[letter]);
 
-    // TODO: aquí invocar goToQuestion3() cuando tengas Q3
-    // window.dispatchEvent(new CustomEvent("go:question3"));
+    goToQuestion3();
 }
 
 // Listeners

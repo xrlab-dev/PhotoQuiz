@@ -43,3 +43,21 @@ export const Q2_SPRITES = {
   },
 };
 
+export const Q3_SPRITES = {
+  A: {
+    activo:  "assets/images/quiz/question03/Preg_03_A_Activo.webp",
+    passivo: "assets/images/quiz/question03/Preg_03_A_Passivo.webp",
+  },
+  B: {
+    activo:  "assets/images/quiz/question03/Preg_03_B_Activo.webp",
+    passivo: "assets/images/quiz/question03/Preg_03_B_Passivo.webp",
+  },
+  C: {
+    activo:  "assets/images/quiz/question03/Preg_03_C_Activo.webp",
+    passivo: "assets/images/quiz/question03/Preg_03_C_Passivo.webp",
+  },
+  D: {
+    activo:  "assets/images/quiz/question03/Preg_03_D_Activo.webp",
+    passivo: "assets/images/quiz/question03/Preg_03_D_Passivo.webp",
+  },
+};
