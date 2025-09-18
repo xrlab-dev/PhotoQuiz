@@ -25,10 +25,10 @@
   width: 75%;             
 }
 
-#q1A.quiz { top: 32%; width: 90%; }
-#q1B.quiz { top: 44%; width: 90%; }
-#q1C.quiz { top: 56%; width: 90%; }
-#q1D.quiz { top: 68%; width: 90%; }
+#q1A.quiz { top: 32%; width: 80%; }
+#q1B.quiz { top: 44%; width: 80%; }
+#q1C.quiz { top: 56%; width: 80%; }
+#q1D.quiz { top: 68%; width: 80%; }
 
 #q1AImg,
 #q1BImg,
