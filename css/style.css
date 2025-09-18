@@ -78,3 +78,37 @@ html, body {
   height: auto;
   display: block;
 }
+
+/* ===== Quiz: Pregunta 1 ===== */
+/* NOTA: posiciones neutrales; ajusta luego si quieres pixel perfect */
+#q1Title.quiz {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 86%;
+  height: auto;
+  pointer-events: none;
+}
+
+#q1A.quiz, #q1B.quiz, #q1C.quiz, #q1D.quiz {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Alturas aproximadas siguiendo la referencia; cámbialas si lo requieres */
+#q1A.quiz { top: 37%; width: 90%; }
+#q1B.quiz { top: 52%; width: 90%; }
+#q1C.quiz { top: 67%; width: 90%; }
+#q1D.quiz { top: 82%; width: 90%; }
+
+#q1AImg, #q1BImg, #q1CImg, #q1DImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
