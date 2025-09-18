@@ -1,0 +1,51 @@
+/* ---- Elementos intro (pantallas 1 y 2) ---- */
+
+/* Título (visible al inicio) */
+#titleImg {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: auto;
+  pointer-events: none;
+}
+
+/* Texto que se activa al click */
+#infoText {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: auto;
+  pointer-events: none;
+}
+
+/* Logo que se activa al click (abajo) */
+#logo {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: auto;
+  pointer-events: none;
+}
+
+/* Botón (se mantiene en ambas pantallas) */
+#startBtn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+#startBtn img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
