@@ -6,7 +6,7 @@
   top: 12%;                
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;              
+  width: 50%;              
   height: auto;
   pointer-events: none;
 }
@@ -25,10 +25,10 @@
   width: 75%;             
 }
 
-#q1A.quiz { top: 32%; }
-#q1B.quiz { top: 44%; }
-#q1C.quiz { top: 56%; }
-#q1D.quiz { top: 68%; }
+#q1A.quiz { top: 32%; width: 90%; }
+#q1B.quiz { top: 44%; width: 90%; }
+#q1C.quiz { top: 56%; width: 90%; }
+#q1D.quiz { top: 68%; width: 90%; }
 
 #q1AImg,
 #q1BImg,
