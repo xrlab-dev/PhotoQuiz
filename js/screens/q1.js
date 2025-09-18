@@ -8,7 +8,7 @@ export function goToQuestion1() {
   bg.src = "assets/images/start/Background_01.webp";
 
   // Oculta intro y botón
-  hide(titleImg, infoText, logo, startBtn);
+  hide(titleImg, infoText, startBtn);
 
   // Muestra elementos de Q1
   show(q1Title, q1A, q1B, q1C, q1D);
