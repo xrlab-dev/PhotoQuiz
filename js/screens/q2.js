@@ -40,6 +40,8 @@ function selectQ2(letter) {
     const map = { A: 0, B: 1, C: 2, D: 3 };
     recordAnswer(2, map[letter]);
 
+    console.log("Q2 =", map[letter]);
+
     // TODO: aquí invocar goToQuestion3() cuando tengas Q3
     // window.dispatchEvent(new CustomEvent("go:question3"));
 }
