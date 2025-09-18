@@ -1,2 +1,4 @@
 /* Utilidades globales */
-.hidden { display: none !important; }
+.hidden {
+    display: none !important;
+}

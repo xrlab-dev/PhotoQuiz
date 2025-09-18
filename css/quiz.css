@@ -1,40 +1,108 @@
 /* ===== Quiz: Pregunta 1 ===== */
-/* Ajustado para que ocupe menos espacio en pantalla y deje libre el logo */
 
 #q1Title.quiz {
-  position: absolute;
-  top: 12%;                
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;              
-  height: auto;
-  pointer-events: none;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: auto;
+    pointer-events: none;
 }
 
 #q1A.quiz,
 #q1B.quiz,
 #q1C.quiz,
 #q1D.quiz {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border: none;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-  width: 75%;             
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    width: 75%;
 }
 
-#q1A.quiz { top: 32%; width: 80%; }
-#q1B.quiz { top: 44%; width: 80%; }
-#q1C.quiz { top: 56%; width: 80%; }
-#q1D.quiz { top: 68%; width: 80%; }
+#q1A.quiz {
+    top: 32%;
+    width: 80%;
+}
+
+#q1B.quiz {
+    top: 44%;
+    width: 80%;
+}
+
+#q1C.quiz {
+    top: 56%;
+    width: 80%;
+}
+
+#q1D.quiz {
+    top: 68%;
+    width: 80%;
+}
 
 #q1AImg,
 #q1BImg,
 #q1CImg,
 #q1DImg {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== Quiz: Pregunta 2 ===== */
+#q2Title.quiz {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: auto;
+    pointer-events: none;
+}
+
+#q2A.quiz,
+#q2B.quiz,
+#q2C.quiz,
+#q2D.quiz {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    width: 75%;
+}
+
+#q2A.quiz {
+    top: 32%;
+    width: 80%
+}
+
+#q2B.quiz {
+    top: 44%;
+    width: 80%
+}
+
+#q2C.quiz {
+    top: 56%;
+    width: 80%
+}
+
+#q2D.quiz {
+    top: 68%;
+    width: 80%
+}
+
+#q2AImg,
+#q2BImg,
+#q2CImg,
+#q2DImg {
+    width: 100%;
+    height: auto;
+    display: block;
 }

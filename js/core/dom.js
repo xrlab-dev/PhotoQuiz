@@ -1,12 +1,12 @@
 // Refs START / intro
-export const bg       = document.getElementById("bg");
-export const titleImg = document.getElementById("titleImg"); // StartingTitle_00
-export const infoText = document.getElementById("infoText"); // StartingText_00
-export const logo     = document.getElementById("logo");     // KlarLogo_Base
+export const bg = document.getElementById("bg");
+export const titleImg = document.getElementById("titleImg");
+export const infoText = document.getElementById("infoText");
+export const logo = document.getElementById("logo");
 export const startBtn = document.getElementById("startBtn");
 export const startBtnImg = document.getElementById("startBtnImg");
 
-// Refs Q1
+//  Q1
 export const q1Title = document.getElementById("q1Title");
 export const q1A = document.getElementById("q1A");
 export const q1B = document.getElementById("q1B");
@@ -16,3 +16,14 @@ export const q1AImg = document.getElementById("q1AImg");
 export const q1BImg = document.getElementById("q1BImg");
 export const q1CImg = document.getElementById("q1CImg");
 export const q1DImg = document.getElementById("q1DImg");
+
+// Q2
+export const q2Title = document.getElementById("q2Title");
+export const q2A = document.getElementById("q2A");
+export const q2B = document.getElementById("q2B");
+export const q2C = document.getElementById("q2C");
+export const q2D = document.getElementById("q2D");
+export const q2AImg = document.getElementById("q2AImg");
+export const q2BImg = document.getElementById("q2BImg");
+export const q2CImg = document.getElementById("q2CImg");
+export const q2DImg = document.getElementById("q2DImg");

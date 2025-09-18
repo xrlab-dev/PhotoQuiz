@@ -1,8 +1,12 @@
 import { Q1_SPRITES } from "../core/sprites.js";
-import { bg, titleImg, infoText, logo, startBtn,
-         q1Title, q1A, q1B, q1C, q1D, q1AImg, q1BImg, q1CImg, q1DImg } from "../core/dom.js";
+import {
+  bg, titleImg, infoText, logo, startBtn,
+  q1Title, q1A, q1B, q1C, q1D, q1AImg, q1BImg, q1CImg, q1DImg
+} from "../core/dom.js";
 import { show, hide, setScreen } from "../core/state.js";
 import { recordAnswer } from "../core/answers.js";
+
+import { goToQuestion2 } from "./q2.js";
 
 export function goToQuestion1() {
   // Asegura el fondo de pantalla 2 (no pasa nada si ya está)
@@ -23,7 +27,7 @@ export function goToQuestion1() {
   setScreen(3);
 }
 
-function selectQ1(letter){
+function selectQ1(letter) {
   q1AImg.src = Q1_SPRITES.A.passivo;
   q1BImg.src = Q1_SPRITES.B.passivo;
   q1CImg.src = Q1_SPRITES.C.passivo;
@@ -34,17 +38,19 @@ function selectQ1(letter){
   if (letter === "C") q1CImg.src = Q1_SPRITES.C.activo;
   if (letter === "D") q1DImg.src = Q1_SPRITES.D.activo;
 
-  const map = { A:0, B:1, C:2, D:3 };
+  const map = { A: 0, B: 1, C: 2, D: 3 };
   recordAnswer(1, map[letter]);
 
   console.log("Q1 =", map[letter]);
+
+  goToQuestion2();
 }
 
 // Listeners de opciones
-q1A?.addEventListener("click", ()=> selectQ1("A"));
-q1B?.addEventListener("click", ()=> selectQ1("B"));
-q1C?.addEventListener("click", ()=> selectQ1("C"));
-q1D?.addEventListener("click", ()=> selectQ1("D"));
+q1A?.addEventListener("click", () => selectQ1("A"));
+q1B?.addEventListener("click", () => selectQ1("B"));
+q1C?.addEventListener("click", () => selectQ1("C"));
+q1D?.addEventListener("click", () => selectQ1("D"));
 
 // Puente: escuchar el evento global para saltar a Q1
 window.addEventListener("go:question1", goToQuestion1);

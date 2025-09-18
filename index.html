@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -10,6 +11,7 @@
   <link rel="stylesheet" href="css/quiz.css">
 
 </head>
+
 <body>
   <main id="stage">
     <!-- Fondo -->
@@ -20,48 +22,57 @@
 
     <!-- Elementos que se ACTIVAN al click -->
     <img id="infoText" class="hidden" src="assets/images/start/StartingText_00.webp" alt="Texto de inicio">
-    <img id="logo"     class="hidden" src="assets/images/start/KlarLogo_Base.webp"   alt="Klar logo">
+    <img id="logo" class="hidden" src="assets/images/start/KlarLogo_Base.webp" alt="Klar logo">
 
     <!-- Botón -->
     <button id="startBtn">
-      <img id="startBtnImg"
-           src="assets/images/start/StartButton_Inactive.webp"
-           alt="Empieza aquí">
+      <img id="startBtnImg" src="assets/images/start/StartButton_Inactive.webp" alt="Empieza aquí">
     </button>
 
-      <!-- ===== QUIZ: PREGUNTA 1 (inicialmente oculto) ===== -->
-  <!-- Placeholder del título de la pregunta -->
-  <img id="q1Title" class="quiz hidden"
-       src="assets/images/quiz/question01/question_01.webp"
-       alt="Pregunta 1">
+    <!-- ===== QUIZ: PREGUNTA 1 (inicialmente oculto) ===== -->
+    <!-- Placeholder del título de la pregunta -->
+    <img id="q1Title" class="quiz hidden" src="assets/images/quiz/question01/question_01.webp" alt="Pregunta 1">
 
-  <!-- Botones A–D (inician en Passivo) -->
-  <button id="q1A" class="quiz hidden">
-    <img id="q1AImg"
-         src="assets/images/quiz/question01/Preg_01_A_Passivo.webp"
-         alt="Respuesta A">
-  </button>
+    <!-- Botones A–D (inician en Passivo) -->
+    <button id="q1A" class="quiz hidden">
+      <img id="q1AImg" src="assets/images/quiz/question01/Preg_01_A_Passivo.webp" alt="Respuesta A">
+    </button>
 
-  <button id="q1B" class="quiz hidden">
-    <img id="q1BImg"
-         src="assets/images/quiz/question01/Preg_01_B_Passivo.webp"
-         alt="Respuesta B">
-  </button>
+    <button id="q1B" class="quiz hidden">
+      <img id="q1BImg" src="assets/images/quiz/question01/Preg_01_B_Passivo.webp" alt="Respuesta B">
+    </button>
 
-  <button id="q1C" class="quiz hidden">
-    <img id="q1CImg"
-         src="assets/images/quiz/question01/Preg_01_C_Passivo.webp"
-         alt="Respuesta C">
-  </button>
+    <button id="q1C" class="quiz hidden">
+      <img id="q1CImg" src="assets/images/quiz/question01/Preg_01_C_Passivo.webp" alt="Respuesta C">
+    </button>
 
-  <button id="q1D" class="quiz hidden">
-    <img id="q1DImg"
-         src="assets/images/quiz/question01/Preg_01_D_Passivo.webp"
-         alt="Respuesta D">
-  </button>
-  
+    <button id="q1D" class="quiz hidden">
+      <img id="q1DImg" src="assets/images/quiz/question01/Preg_01_D_Passivo.webp" alt="Respuesta D">
+    </button>
+
+    <!-- ===== QUIZ: PREGUNTA 2 (inicialmente oculto) ===== -->
+    <img id="q2Title" class="quiz hidden" src="assets/images/quiz/question02/question_02.webp" alt="Pregunta 2">
+
+    <button id="q2A" class="quiz hidden">
+      <img id="q2AImg" src="assets/images/quiz/question02/Preg_02_A_Passivo.webp" alt="Respuesta A">
+    </button>
+
+    <button id="q2B" class="quiz hidden">
+      <img id="q2BImg" src="assets/images/quiz/question02/Preg_02_B_Passivo.webp" alt="Respuesta B">
+    </button>
+
+    <button id="q2C" class="quiz hidden">
+      <img id="q2CImg" src="assets/images/quiz/question02/Preg_02_C_Passivo.webp" alt="Respuesta C">
+    </button>
+
+    <button id="q2D" class="quiz hidden">
+      <img id="q2DImg" src="assets/images/quiz/question02/Preg_02_D_Passivo.webp" alt="Respuesta D">
+    </button>
+
+
   </main>
 
   <script type="module" src="js/app.js"></script>
 </body>
+
 </html>
