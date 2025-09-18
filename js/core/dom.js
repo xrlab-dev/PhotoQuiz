@@ -38,3 +38,6 @@ export const q3AImg = document.getElementById("q3AImg");
 export const q3BImg = document.getElementById("q3BImg");
 export const q3CImg = document.getElementById("q3CImg");
 export const q3DImg = document.getElementById("q3DImg");
+
+// Standby
+export const standby = document.getElementById("standby");

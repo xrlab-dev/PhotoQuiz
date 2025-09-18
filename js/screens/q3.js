@@ -7,6 +7,8 @@ import {
     q3AImg, q3BImg, q3CImg, q3DImg
 } from "../core/dom.js";
 
+import { goToStandby } from "./standby.js";
+
 export function goToQuestion3() {
     // Oculta Q2
     hide(q2Title, q2A, q2B, q2C, q2D);
@@ -42,8 +44,7 @@ function selectQ3(letter) {
 
     console.log("Q3 =", map[letter]);
 
-    // TODO: aquí disparar el cálculo del perfil y mostrar resultados
-    // ej: window.dispatchEvent(new CustomEvent("go:results"));
+    goToStandby();
 }
 
 // Listeners
