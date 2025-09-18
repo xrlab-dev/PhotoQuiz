@@ -2,6 +2,7 @@ import { Q1_SPRITES } from "../core/sprites.js";
 import { bg, titleImg, infoText, logo, startBtn,
          q1Title, q1A, q1B, q1C, q1D, q1AImg, q1BImg, q1CImg, q1DImg } from "../core/dom.js";
 import { show, hide, setScreen } from "../core/state.js";
+import { recordAnswer } from "../core/answers.js";
 
 export function goToQuestion1() {
   // Asegura el fondo de pantalla 2 (no pasa nada si ya está)
@@ -32,6 +33,11 @@ function selectQ1(letter){
   if (letter === "B") q1BImg.src = Q1_SPRITES.B.activo;
   if (letter === "C") q1CImg.src = Q1_SPRITES.C.activo;
   if (letter === "D") q1DImg.src = Q1_SPRITES.D.activo;
+
+  const map = { A:0, B:1, C:2, D:3 };
+  recordAnswer(1, map[letter]);
+
+  console.log("Q1 =", map[letter]);
 }
 
 // Listeners de opciones
