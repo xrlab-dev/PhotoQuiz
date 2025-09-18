@@ -47,8 +47,26 @@ function selectQ2(letter) {
     goToQuestion3();
 }
 
-// Listeners
+// A
+q2A?.addEventListener("pointerdown", () => { q2AImg.src = Q2_SPRITES.A.activo; });
+q2A?.addEventListener("pointerup", () => { q2AImg.src = Q2_SPRITES.A.passivo; });
+q2A?.addEventListener("pointerleave", () => { q2AImg.src = Q2_SPRITES.A.passivo; });
 q2A?.addEventListener("click", () => selectQ2("A"));
+
+// B
+q2B?.addEventListener("pointerdown", () => { q2BImg.src = Q2_SPRITES.B.activo; });
+q2B?.addEventListener("pointerup", () => { q2BImg.src = Q2_SPRITES.B.passivo; });
+q2B?.addEventListener("pointerleave", () => { q2BImg.src = Q2_SPRITES.B.passivo; });
 q2B?.addEventListener("click", () => selectQ2("B"));
+
+// C
+q2C?.addEventListener("pointerdown", () => { q2CImg.src = Q2_SPRITES.C.activo; });
+q2C?.addEventListener("pointerup", () => { q2CImg.src = Q2_SPRITES.C.passivo; });
+q2C?.addEventListener("pointerleave", () => { q2CImg.src = Q2_SPRITES.C.passivo; });
 q2C?.addEventListener("click", () => selectQ2("C"));
+
+// D
+q2D?.addEventListener("pointerdown", () => { q2DImg.src = Q2_SPRITES.D.activo; });
+q2D?.addEventListener("pointerup", () => { q2DImg.src = Q2_SPRITES.D.passivo; });
+q2D?.addEventListener("pointerleave", () => { q2DImg.src = Q2_SPRITES.D.passivo; });
 q2D?.addEventListener("click", () => selectQ2("D"));

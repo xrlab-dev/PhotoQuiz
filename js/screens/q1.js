@@ -46,11 +46,26 @@ function selectQ1(letter) {
   goToQuestion2();
 }
 
-// Listeners de opciones
+// A
+q1A?.addEventListener("pointerdown", () => { q1AImg.src = Q1_SPRITES.A.activo; });
+q1A?.addEventListener("pointerup", () => { q1AImg.src = Q1_SPRITES.A.passivo; });
+q1A?.addEventListener("pointerleave", () => { q1AImg.src = Q1_SPRITES.A.passivo; });
 q1A?.addEventListener("click", () => selectQ1("A"));
-q1B?.addEventListener("click", () => selectQ1("B"));
-q1C?.addEventListener("click", () => selectQ1("C"));
-q1D?.addEventListener("click", () => selectQ1("D"));
 
-// Puente: escuchar el evento global para saltar a Q1
-window.addEventListener("go:question1", goToQuestion1);
+// B
+q1B?.addEventListener("pointerdown", () => { q1BImg.src = Q1_SPRITES.B.activo; });
+q1B?.addEventListener("pointerup", () => { q1BImg.src = Q1_SPRITES.B.passivo; });
+q1B?.addEventListener("pointerleave", () => { q1BImg.src = Q1_SPRITES.B.passivo; });
+q1B?.addEventListener("click", () => selectQ1("B"));
+
+// C
+q1C?.addEventListener("pointerdown", () => { q1CImg.src = Q1_SPRITES.C.activo; });
+q1C?.addEventListener("pointerup", () => { q1CImg.src = Q1_SPRITES.C.passivo; });
+q1C?.addEventListener("pointerleave", () => { q1CImg.src = Q1_SPRITES.C.passivo; });
+q1C?.addEventListener("click", () => selectQ1("C"));
+
+// D
+q1D?.addEventListener("pointerdown", () => { q1DImg.src = Q1_SPRITES.D.activo; });
+q1D?.addEventListener("pointerup", () => { q1DImg.src = Q1_SPRITES.D.passivo; });
+q1D?.addEventListener("pointerleave", () => { q1DImg.src = Q1_SPRITES.D.passivo; });
+q1D?.addEventListener("click", () => selectQ1("D"));

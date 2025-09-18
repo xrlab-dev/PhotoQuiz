@@ -1,6 +1,7 @@
 import { SPRITES } from "../core/sprites.js";
 import { bg, titleImg, infoText, logo, startBtn, startBtnImg } from "../core/dom.js";
 import { screen, setScreen } from "../core/state.js";
+import { goToQuestion1 } from "./q1.js";
 
 // Feedback visual del botón
 startBtn.addEventListener("pointerdown", () => { startBtnImg.src = SPRITES.active; });
@@ -12,9 +13,7 @@ startBtn.addEventListener("click", () => {
   if (screen === 1) {
     goToScreen2();
   } else if (screen === 2) {
-    // Siguiente salto (Q1) se hace desde q1.js para mantener responsabilidades.
-    const ev = new CustomEvent("go:question1");
-    window.dispatchEvent(ev);
+    goToQuestion1();
   }
 });
 

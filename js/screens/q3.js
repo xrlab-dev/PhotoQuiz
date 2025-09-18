@@ -47,8 +47,26 @@ function selectQ3(letter) {
     goToStandby();
 }
 
-// Listeners
+// A
+q3A?.addEventListener("pointerdown", () => { q3AImg.src = Q3_SPRITES.A.activo; });
+q3A?.addEventListener("pointerup", () => { q3AImg.src = Q3_SPRITES.A.passivo; });
+q3A?.addEventListener("pointerleave", () => { q3AImg.src = Q3_SPRITES.A.passivo; });
 q3A?.addEventListener("click", () => selectQ3("A"));
+
+// B
+q3B?.addEventListener("pointerdown", () => { q3BImg.src = Q3_SPRITES.B.activo; });
+q3B?.addEventListener("pointerup", () => { q3BImg.src = Q3_SPRITES.B.passivo; });
+q3B?.addEventListener("pointerleave", () => { q3BImg.src = Q3_SPRITES.B.passivo; });
 q3B?.addEventListener("click", () => selectQ3("B"));
+
+// C
+q3C?.addEventListener("pointerdown", () => { q3CImg.src = Q3_SPRITES.C.activo; });
+q3C?.addEventListener("pointerup", () => { q3CImg.src = Q3_SPRITES.C.passivo; });
+q3C?.addEventListener("pointerleave", () => { q3CImg.src = Q3_SPRITES.C.passivo; });
 q3C?.addEventListener("click", () => selectQ3("C"));
+
+// D
+q3D?.addEventListener("pointerdown", () => { q3DImg.src = Q3_SPRITES.D.activo; });
+q3D?.addEventListener("pointerup", () => { q3DImg.src = Q3_SPRITES.D.passivo; });
+q3D?.addEventListener("pointerleave", () => { q3DImg.src = Q3_SPRITES.D.passivo; });
 q3D?.addEventListener("click", () => selectQ3("D"));
