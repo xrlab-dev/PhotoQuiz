@@ -15,6 +15,9 @@ html, body {
   overflow: hidden;
 }
 
+/* Utils */
+.hidden { display: none !important; }
+
 /* Fondo full */
 #bg {
   position: absolute;
@@ -24,8 +27,10 @@ html, body {
   object-fit: cover;
 }
 
-/* Texto */
-#startText {
+/* ---- Elementos: ajusta posiciones/ancho a tu gusto ---- */
+
+/* Título (visible al inicio) */
+#titleImg {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -35,10 +40,32 @@ html, body {
   pointer-events: none;
 }
 
-/* Botón */
+/* Texto que se activa al click */
+#infoText {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: auto;
+  pointer-events: none;
+}
+
+/* Logo que se activa al click (abajo) */
+#logo {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: auto;
+  pointer-events: none;
+}
+
+/* Botón (se mantiene) */
 #startBtn {
   position: absolute;
-  top: 75%;
+  top: 70%;
   left: 50%;
   transform: translateX(-50%);
   border: none;

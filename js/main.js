@@ -4,8 +4,14 @@ const SPRITES = {
   active:   "assets/images/start/StartButton_Active.webp",
 };
 
-const startBtn = document.getElementById("startBtn");
+const startBtn    = document.getElementById("startBtn");
 const startBtnImg = document.getElementById("startBtnImg");
+
+// NUEVOS elementos a alternar
+const bg       = document.getElementById("bg");
+const titleImg = document.getElementById("titleImg");
+const infoText = document.getElementById("infoText");
+const logo     = document.getElementById("logo");
 
 // Al presionar
 startBtn.addEventListener("pointerdown", () => {
@@ -17,7 +23,15 @@ startBtn.addEventListener("pointerup", () => {
   startBtnImg.src = SPRITES.inactive;
 });
 
-// Click → aquí pasas a la siguiente pantalla
+// Click → activar texto + logo, cambiar fondo, desactivar título
 startBtn.addEventListener("click", () => {
-  console.log("→ continuar flujo");
+  // 1) Fondo
+  bg.src = "assets/images/start/Background_01.webp";
+
+  // 2) Mostrar StartingText_00 y KlarLogo_Base
+  infoText.classList.remove("hidden");
+  logo.classList.remove("hidden");
+
+  // 3) Ocultar StartingTitle_00
+  titleImg.classList.add("hidden");
 });
