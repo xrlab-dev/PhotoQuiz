@@ -17,9 +17,11 @@ export function goToStandby() {
   const a2 = getAnswer(2);
   const a3 = getAnswer(3);
   const perfil = computeProfile(a1, a2, a3);
-  
+
   console.log("Perfil calculado:", perfil);
 
-  // TODO: aquí puedes mostrar la imagen/texto correspondiente al perfil
-  // ej: cambiar src de #standby según el perfil
+  setTimeout(() => {
+    goToProfile(perfil);
+  }, 5000);
+  
 }
