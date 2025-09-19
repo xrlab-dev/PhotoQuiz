@@ -7,31 +7,30 @@ const BTN_SPRITES = {
     inactive: "assets/images/profiles/ProfileButton_Inactive.webp",
 };
 
-// Imágenes de perfil (pantalla 1)
-const PROFILE_IMAGES = {
-    Emocional: "assets/images/profiles/emocional/emocional_01.webp",
-    Social: "assets/images/profiles/social/social_01.webp",
-    Emprendedor: "assets/images/profiles/emprendedor/emprendedor_01.webp",
-    Influenciable: "assets/images/profiles/influenciable/influenciable_01.webp",
-};
+let currentProfile = null;
+let currentStep = 1;
+
+function getProfileImage(perfil, step) {
+    const basePath = `assets/images/profiles/${perfil.toLowerCase()}/${perfil.toLowerCase()}_0${step}.webp`;
+    return basePath;
+}
 
 export function goToProfile(perfil) {
-    // Oculta Standby
+
     hide(standby);
 
-    // Imagen central según perfil
-    profileImg.src = PROFILE_IMAGES[perfil];
+    currentProfile = perfil;
+    currentStep = 1;
 
-    // Mostrar elementos
+    profileImg.src = getProfileImage(currentProfile, currentStep);
+
     show(profileImg, profileBtn, logo);
 
-    // Reset botón
     profileBtnImg.src = BTN_SPRITES.inactive;
 
     setScreen(7);
 }
 
-// Eventos de botón
 profileBtn.addEventListener("pointerdown", () => {
     profileBtnImg.src = BTN_SPRITES.active;
 });
@@ -42,4 +41,13 @@ profileBtn.addEventListener("pointerleave", () => {
     profileBtnImg.src = BTN_SPRITES.inactive;
 });
 
-// (más adelante en click → ir a Profile Screen 2)
+profileBtn.addEventListener("click", () => {
+    if (!currentProfile) return;
+
+    if (currentStep < 3) {
+        currentStep++;
+        profileImg.src = getProfileImage(currentProfile, currentStep);
+    } else {
+        window.location.href = "https://www.klar.mx/";
+    }
+});

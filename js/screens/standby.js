@@ -8,6 +8,8 @@ export function goToStandby() {
   // Oculta Q3
   hide(q3Title, q3A, q3B, q3C, q3D);
 
+  bg.src = "assets/images/start/Background_00.webp";
+
   // Muestra Standby
   show(standby);
 
@@ -23,6 +25,6 @@ export function goToStandby() {
 
   setTimeout(() => {
     goToProfile(perfil);
-  }, 5000);
+  }, 3000);
 
 }
