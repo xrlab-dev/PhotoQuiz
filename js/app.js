@@ -6,5 +6,6 @@ import "./core/state.js";   // estado + helpers
 import "./screens/start.js"; // listeners de botón start y goToScreen2()
 import "./screens/q1.js";    // lógica de pregunta 1 (y escucha evento 'go:question1')
 import "./screens/q2.js"; // lógica de pregunta 2 (y escucha evento 'go:question2')
-
-// (Opcional) init() si luego quieres preparar algo al cargar.
+import "./screens/q3.js";
+import "./screens/standby.js"
+import "./screens/profile.js";

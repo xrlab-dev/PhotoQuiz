@@ -1,7 +1,8 @@
 import { show, hide, setScreen } from "../core/state.js";
 import { getAnswer } from "../core/answers.js";
-import { computeProfile } from "../core/profile.js";
+import { computeProfile } from "../core/profileCalculator.js";
 import { standby, q3Title, q3A, q3B, q3C, q3D } from "../core/dom.js";
+import { goToProfile } from "./profile.js";
 
 export function goToStandby() {
   // Oculta Q3
@@ -23,5 +24,5 @@ export function goToStandby() {
   setTimeout(() => {
     goToProfile(perfil);
   }, 5000);
-  
+
 }

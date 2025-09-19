@@ -41,3 +41,8 @@ export const q3DImg = document.getElementById("q3DImg");
 
 // Standby
 export const standby = document.getElementById("standby");
+
+// Profile
+export const profileImg = document.getElementById("profileImg");
+export const profileBtn = document.getElementById("profileBtn");
+export const profileBtnImg = document.getElementById("profileBtnImg");

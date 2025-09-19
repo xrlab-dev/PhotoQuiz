@@ -1,0 +1,26 @@
+/* ===== Pantalla Perfil ===== */
+#profileImg {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: auto;
+}
+
+#profileBtn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+#profileBtnImg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
