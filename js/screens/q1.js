@@ -9,9 +9,8 @@ import { recordAnswer } from "../core/answers.js";
 import { goToQuestion2 } from "./q2.js";
 
 export function goToQuestion1() {
-
+  // Asegura el fondo de pantalla 2 (no pasa nada si ya está)
   bg.src = "assets/images/start/Background_01.webp";
-  document.documentElement.style.backgroundImage = 'url("assets/images/start/Background_01.webp")';
 
   // Oculta intro y botón
   hide(titleImg, infoText, startBtn);

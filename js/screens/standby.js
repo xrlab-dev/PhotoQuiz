@@ -9,7 +9,6 @@ export function goToStandby() {
   hide(q3Title, q3A, q3B, q3C, q3D);
 
   bg.src = "assets/images/start/Background_00.webp";
-  document.documentElement.style.backgroundImage = 'url("assets/images/start/Background_00.webp")';
 
   // Muestra Standby
   show(standby);
