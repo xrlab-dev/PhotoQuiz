@@ -9,3 +9,5 @@ import "./screens/q2.js"; // lógica de pregunta 2 (y escucha evento 'go:questio
 import "./screens/q3.js";
 import "./screens/standby.js"
 import "./screens/profile.js";
+
+document.documentElement.style.backgroundImage = 'url("assets/images/start/Background_00.webp")';

@@ -19,7 +19,9 @@ startBtn.addEventListener("click", () => {
 
 export function goToScreen2() {
   // Cambiar fondo y alternar elementos
-  bg.src = "assets/images/start/Background_01.webp";
+
+  //document.documentElement.style.backgroundImage = 'url("assets/images/start/Background_00.webp")';
+
   infoText.classList.remove("hidden");  // StartingText_00
   logo.classList.remove("hidden");      // KlarLogo_Base
   titleImg.classList.add("hidden");     // Oculta StartingTitle_00
