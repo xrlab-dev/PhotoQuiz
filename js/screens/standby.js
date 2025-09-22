@@ -25,6 +25,6 @@ export function goToStandby() {
 
   setTimeout(() => {
     goToProfile(perfil);
-  }, 3000);
+  }, 6000);
 
 }
