@@ -3,7 +3,7 @@ import { Audio } from "./core/audio.js";
 
 await Audio.preload();     // precarga y deja listo el unlock
 Audio.wireButtons();       // botones con data-sfx
-Audio.playMusic(0.7);      // loop de fondo
+Audio.playMusic(0.4);      // loop de fondo
 Audio.play("startup");     // sfx inicial opcional
 
 import "./core/sprites.js"; // define mapas (no export side effects)
