@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/quiz.css">
   <link rel="stylesheet" href="css/standby.css">
   <link rel="stylesheet" href="css/profile.css">
-
 </head>
 
 <body>
@@ -27,80 +26,76 @@
     <img id="logo" class="hidden" src="assets/images/start/KlarLogo_Base.webp" alt="Klar logo">
 
     <!-- Botón -->
-    <button id="startBtn">
+    <button id="startBtn" data-sfx="general">
       <img id="startBtnImg" src="assets/images/start/StartButton_Inactive.webp" alt="Empieza aquí">
     </button>
 
-    <!-- ===== QUIZ: PREGUNTA 1 (inicialmente oculto) ===== -->
-    <!-- Placeholder del título de la pregunta -->
+    <!-- ===== QUIZ: PREGUNTA 1 ===== -->
     <img id="q1Title" class="quiz hidden" src="assets/images/quiz/question01/question_01.webp" alt="Pregunta 1">
 
-    <!-- Botones A–D (inician en Passivo) -->
-    <button id="q1A" class="quiz hidden">
+    <button id="q1A" class="quiz hidden" data-sfx="answer">
       <img id="q1AImg" src="assets/images/quiz/question01/Preg_01_A_Passivo.webp" alt="Respuesta A">
     </button>
 
-    <button id="q1B" class="quiz hidden">
+    <button id="q1B" class="quiz hidden" data-sfx="answer">
       <img id="q1BImg" src="assets/images/quiz/question01/Preg_01_B_Passivo.webp" alt="Respuesta B">
     </button>
 
-    <button id="q1C" class="quiz hidden">
+    <button id="q1C" class="quiz hidden" data-sfx="answer">
       <img id="q1CImg" src="assets/images/quiz/question01/Preg_01_C_Passivo.webp" alt="Respuesta C">
     </button>
 
-    <button id="q1D" class="quiz hidden">
+    <button id="q1D" class="quiz hidden" data-sfx="answer">
       <img id="q1DImg" src="assets/images/quiz/question01/Preg_01_D_Passivo.webp" alt="Respuesta D">
     </button>
 
-    <!-- ===== QUIZ: PREGUNTA 2 (inicialmente oculto) ===== -->
+    <!-- ===== QUIZ: PREGUNTA 2 ===== -->
     <img id="q2Title" class="quiz hidden" src="assets/images/quiz/question02/question_02.webp" alt="Pregunta 2">
 
-    <button id="q2A" class="quiz hidden">
+    <button id="q2A" class="quiz hidden" data-sfx="answer">
       <img id="q2AImg" src="assets/images/quiz/question02/Preg_02_A_Passivo.webp" alt="Respuesta A">
     </button>
 
-    <button id="q2B" class="quiz hidden">
+    <button id="q2B" class="quiz hidden" data-sfx="answer">
       <img id="q2BImg" src="assets/images/quiz/question02/Preg_02_B_Passivo.webp" alt="Respuesta B">
     </button>
 
-    <button id="q2C" class="quiz hidden">
+    <button id="q2C" class="quiz hidden" data-sfx="answer">
       <img id="q2CImg" src="assets/images/quiz/question02/Preg_02_C_Passivo.webp" alt="Respuesta C">
     </button>
 
-    <button id="q2D" class="quiz hidden">
+    <button id="q2D" class="quiz hidden" data-sfx="answer">
       <img id="q2DImg" src="assets/images/quiz/question02/Preg_02_D_Passivo.webp" alt="Respuesta D">
     </button>
 
-    <!-- ===== QUIZ: PREGUNTA 3 (inicialmente oculto) ===== -->
+    <!-- ===== QUIZ: PREGUNTA 3 ===== -->
     <img id="q3Title" class="quiz hidden" src="assets/images/quiz/question03/question_03.webp" alt="Pregunta 3">
 
-    <button id="q3A" class="quiz hidden">
+    <button id="q3A" class="quiz hidden" data-sfx="answer">
       <img id="q3AImg" src="assets/images/quiz/question03/Preg_03_A_Passivo.webp" alt="Respuesta A">
     </button>
 
-    <button id="q3B" class="quiz hidden">
+    <button id="q3B" class="quiz hidden" data-sfx="answer">
       <img id="q3BImg" src="assets/images/quiz/question03/Preg_03_B_Passivo.webp" alt="Respuesta B">
     </button>
 
-    <button id="q3C" class="quiz hidden">
+    <button id="q3C" class="quiz hidden" data-sfx="answer">
       <img id="q3CImg" src="assets/images/quiz/question03/Preg_03_C_Passivo.webp" alt="Respuesta C">
     </button>
 
-    <button id="q3D" class="quiz hidden">
+    <button id="q3D" class="quiz hidden" data-sfx="answer">
       <img id="q3DImg" src="assets/images/quiz/question03/Preg_03_D_Passivo.webp" alt="Respuesta D">
     </button>
 
-    <!-- ===== PANTALLA STANDBY (inicialmente oculta) ===== -->
+    <!-- ===== PANTALLA STANDBY ===== -->
     <img id="standby" class="hidden" src="assets/images/standby/StandbyText.webp" alt="Pantalla de espera">
 
     <!-- ===== PANTALLA DE PERFIL ===== -->
     <img id="profileImg" class="hidden" src="" alt="Perfil">
 
-    <button id="profileBtn" class="hidden">
+    <button id="profileBtn" class="hidden" data-sfx="general">
       <img id="profileBtnImg" src="assets/images/profiles/ProfileButton_Inactive.webp" alt="Continuar perfil">
     </button>
-
-
   </main>
 
   <script type="module" src="js/app.js"></script>

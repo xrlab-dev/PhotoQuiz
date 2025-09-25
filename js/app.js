@@ -1,4 +1,11 @@
 // Punto de entrada: solo importa módulos para que registren sus listeners.
+import { Audio } from "./core/audio.js";
+
+await Audio.preload();     // precarga y deja listo el unlock
+Audio.wireButtons();       // botones con data-sfx
+Audio.playMusic(0.7);      // loop de fondo
+Audio.play("startup");     // sfx inicial opcional
+
 import "./core/sprites.js"; // define mapas (no export side effects)
 import "./core/dom.js";     // cachea refs (no side effects)
 import "./core/state.js";   // estado + helpers

@@ -2,3 +2,8 @@
 .hidden {
     display: none !important;
 }
+
+/* Evitar que la imagen de fondo bloquee clics/taps */
+#bg {
+    pointer-events: none;
+}
