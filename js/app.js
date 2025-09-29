@@ -1,5 +1,8 @@
 import { Audio } from "./core/audio.js";
 
+// Forzar fondo inicial al cargar la app
+document.documentElement.style.backgroundImage = 'url("assets/images/start/Background_00.webp")';
+
 async function initApp() {
     // 1️⃣ Preload y wire buttons
     await Audio.preload();

@@ -10,6 +10,9 @@ export function goToStandby() {
 
   bg.src = "assets/images/start/Background_00.webp";
 
+  document.documentElement.style.backgroundImage = 'url("assets/images/start/Background_00.webp")';
+
+
   // Muestra Standby
   show(standby);
 
